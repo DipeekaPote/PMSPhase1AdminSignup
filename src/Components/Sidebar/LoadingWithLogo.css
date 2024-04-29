@@ -1,0 +1,46 @@
+
+
+  .logos {
+    top: 50%; /* Position the spinner at the center vertically */
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loading-indicators {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    color: #555;
+    background-color: transparent; /* Set the background color of the loading indicator */
+  }
+  
+  .loading-spinners {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 50%; /* Position the spinner at the center vertically */
+    left: 50%; /* Position the spinner at the center horizontally */
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ccc;
+    border-top: 2px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
